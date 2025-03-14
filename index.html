@@ -12,33 +12,37 @@
     <header class="bg-light py-3 shadown-sm">
         <div class="container d-flex justify-content-between align-items-center">
             <img src="./img/logo.svg" alt="Carrefour">
-            <form>
-                <input type="search">
-                <button>Buscar</button>
+            <form class="d-flex flex-grow-1 ms-12 px-2" role="search">
+                <input class="form-control" type="search" placeholder="Pesquise por produtos ou marcas">
+                <button class="btn btn-primary">
+                    <i class="bi bi-search"></i>
+                </button>
             </form>
+
             <div class="d-flex gap-3 ms-auto">
                 <a href="#" class="text-dark text-decoration-none me-3 d-flex align-items-center">
-                    <img src="./img/usuario.svg" alt="">
-                    Usuário
+                    <i> <img src="./img/usuario.svg" alt=""></i>
+                    <span class="ms-1">Usuário</span>
                 </a>
                 <a href="#" class="text-dark text-decoration-none me-3 d-flex align-items-center">
-                    <i class="bi bi-person"></i>
-                    <span class="ms-1">Bem-vindo<br><small>Entre ou cadastre-se</small></span>
+                    <i><img src="./img/beneficio.svg" alt=""></i>
+                    <span class="ms-1">Beneficio do Carrefour</span>
+                    
                 </a>
-                <a href="#" class="text-dark text-decoration-none">
-                    <img src="./img/beneficio.svg" alt="">
-                    Beneficio do Carrefour
-                </a>
-                <a href="#" class="text-dark text-decoration-none">
+                <a href="#" class="text-dark text-decoration-none me-3 d-flex align-items-center">
                     <img src="./img/pedidos.svg" alt="">
-                    Meus pedidos
+                    Meus Pedidos
                 </a>
-                <a href="#" class="text-dark text-decoration-none">
+				<a href="#" class="text-dark text-decoration-none me-3 d-flex align-items-center">
                     <img src="./img/favoritos.svg" alt="">
                     Meus favoritos
                 </a>
-                <a href="#" class="text-dark text-decoration-none">
-                    <img src="./img/carrinho.svg" alt="">                    
+
+			   <a href="#" class="text-dark text-decoration-none  position-relative">
+                    <img src="./img/carrinho.svg" alt="">   
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                        0
+                    </span>                 
                 </a>
             </div>
         </div>
